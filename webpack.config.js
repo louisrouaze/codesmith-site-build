@@ -32,7 +32,7 @@ const cssProd = ExtractTextPlugin.extract({
       },
     },
   ],
-  publicPath: '/dist',
+  publicPath: './dist',
 });
 const cssConfig = isProd ? cssProd : cssDev;
 
@@ -60,29 +60,39 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        use: ['file-loader?name=images/[name].[ext]', 'image-webpack-loader?bypassOnDebug'],
+        use: ['file-loader?name=/images/[name].[ext]', 'image-webpack-loader?bypassOnDebug'],
       },
-      { test: /\.(woff2?)$/, use: 'url-loader?limit=10000&name=fonts/[name].[ext]' },
-      { test: /\.(ttf|eot)$/, use: 'file-loader?name=fonts/[name].[ext]' },
+      { test: /\.(woff2?)$/, use: 'url-loader?limit=10000&name=/fonts/[name].[ext]' },
+      { test: /\.(ttf|eot)$/, use: 'file-loader?name=/fonts/[name].[ext]' },
       // Bootstrap 3
       { test: /bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, use: 'imports-loader?jQuery=jquery' },
     ],
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    hot: true,
-    open: true,
-    stats: 'errors-only',
+    compress: true, // gzip
+    hot: true, // hot module replacement
+    open: true, // open window
+    stats: 'errors-only', // less info in terminal log
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Project Demo',
+      hash: true,
+      template: './src/faq.html',
+      filename: 'faq.html',
+      // minify: {
+      //   collapseWhitespace: true,
+      // },
+    }),
+    new HtmlWebpackPlugin({
       hash: true,
       template: './src/index.html',
+      // minify: {
+      //   collapseWhitespace: true,
+      // },
     }),
     new ExtractTextPlugin({
-      filename: '/css/[name].css',
+      filename: './css/[name].css',
       disable: !isProd,
       allChunks: true,
     }),
