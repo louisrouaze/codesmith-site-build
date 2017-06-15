@@ -76,6 +76,7 @@ module.exports = {
     stats: 'errors-only', // less info in terminal log
   },
   plugins: [
+    // Additional html/ejs templates must each have their own instance
     new HtmlWebpackPlugin({
       hash: true,
       template: './src/faq.html',

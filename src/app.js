@@ -1,3 +1,5 @@
+// add all custom vanilla js functionality here
+
 import css from './app.scss';
 
 if (process.env.NODE_ENV !== 'production') {

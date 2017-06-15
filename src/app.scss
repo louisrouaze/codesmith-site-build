@@ -1,5 +1,8 @@
+// css/sass refactoring in progress
+
 @import './bootstrap/customizations.scss';
 
+// produces the gradient for the header underlines
 @mixin horiz-gradient($color) {
   background-image: -webkit-gradient(linear, 0 0, 100% 0, from(lighten($color, 6%)), to(darken($color, 4%)));
   background-image: -webkit-linear-gradient(left, lighten($color, 6%), darken($color, 4%));
@@ -14,6 +17,7 @@
   background-image: -o-linear-gradient(top, lighten($color, 6%), darken($color, 4%));
 }
 
+// import the main font
 @at-root {
   @font-face {
     font-family: 'HK Grotesk';
@@ -64,8 +68,6 @@ strong {
 a, a:hover, a:focus, a:active {
   text-decoration: underline;
 }
-
-
 
 .navbar-default {
   padding-top: 30px;
@@ -278,7 +280,7 @@ footer {
   }
 }
 
-
+// adds a fade to the dropdowns
 .open > .dropdown-menu {
   animation-name: slidenavAnimation;
   animation-duration:.2s;
@@ -333,8 +335,6 @@ footer {
   }
 }
 
-
-
 .email-signup {
   margin-top: 60px;
 
@@ -358,7 +358,7 @@ footer {
 :-ms-input-placeholder { @include placeholder-style(); } /* ie */
 input:-moz-placeholder { @include placeholder-style(); }
 
-
+// custom right facing caret
 .caret {
   &.right {
     border-top: 4px solid transparent;
