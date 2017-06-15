@@ -1,4 +1,4 @@
-# CSS-SASS Bootstrap Builder
+# CSS-SASS Bootstrap Builder - Codesmith Website Build
 
 A Webpack developement environment for compiling production CSS and JavaScript using Hot Module Replacement (HMR), SASS, the Twitter Bootstrap library, Pug/Jade, EJS, PurifyCSS, and more.
 
