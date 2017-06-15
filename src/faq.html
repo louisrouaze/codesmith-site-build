@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SASS-CSS Bootstrap Builder</title>
+</head>
+
+<body>
+  <nav id="main-nav" class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src=<%=require( "./images/codesmith-logo-md.png") %> /></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/faq.html">12 Week Academy</a></li>
+          <li><a href="#">Events &amp; Workshops</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQ <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Recruitment</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
+          <li><a href="#">The July 2017 cohort is now open.</a></li>
+          <li><a class="btn btn-primary" href="#">Apply</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <h1 id="codesmith-program" class="margin-top-none page-header">The Codesmith Program</h1>
+          <p>Our mission is to develop the most exceptional software engineers - technically brilliant, incredible collaborators, passionate about building, and supportive of their community.</p>
+          <p>Codesmith challenges students starting before even Day 1. The curriculum instills a strong foundation in computer science and core programming concepts before diving into the technologies that are built on top of them. Students then go on to learn fullstack web development using React and Node, but grow to be language- and framework-agnostic engineers through their deep understanding of the fundamentals.</p>
+          <p>Starting very early in the curriculum, residents learn through pair programming and building projects. The projects students build by the end of the program give them production-level experience and reach thousands of users. More importantly, students ask the questions "Why?" instead of just the "How?" - Codesmith residents learn how to learn, making them lifelong learners and adaptable to the constantly-changing world of technology and software engineering.</p>
+          <p>We select an outstanding group of intellectually curious and determined people to join the program every 7 weeks.</p>
+          <h2 name="a-hub-of-engineering" id="a-hub-of-engineering" class="page-header">A Hub of Engineering </h2>
+          <h3 id="socal-react">SoCal React</h3>
+          <p>SoCal React is a monthly meetup that we organize to keep up to date with the latest developments in React, a framework for web and mobile applications. As the grounding framework for sites like Facebook and Instagram, we recognize that React is growing rapidly, so we bring in leading engineers who can speak to its ever-changing applications. Past topics of discussion include multi-threaded isomorphic React, using GraphQL with React, and visualizing application states. Beyond showcasing recent developments in React, the SoCal React meetup has become a space for the wider engineering community to build connections and exchange ideas.</p>
+          <h3 id="guest-speakers">Guest Speakers</h3>
+          <p>Guest speakers play an influential role in the Codesmith community. As a community that encourages intellectual curiosity in addition to engineering excellence, Codesmith invites guest speakers who are excited to discuss the far-reaching possibilities of software engineering. In the past, guest speakers have led discussions on the role of software engineers in developing self-driving cars, innovating aerospace engineering, and improving artificial intelligence.</p>
+          <h3 id="production-projects">Production Projects</h3>
+          <p>During the second half of the program, residents build production projects that make a major impact on the open source and web community. These projects are built from the ground up, and focus on building full stack web applications and developer tools. Codesmith production projects have collected thousands of GItHub stars, trended on HackerNews, have been featured at Google I/O, and continue to push the boundaries of software engineering.</p>
+          <h2 id="core-cirriculum" class="page-header">Core Cirriculum</h2>
+          <h3 id="javascript-principles">JavaScript Principles</h3>
+          <p>Codesmith is about engineering, and Javascript is the vehicle with which we teach it.</p>
+          <p>JavaScript became the standard language of the web decades ago, and it has evolved tremendously in terms of popularity and power ever since. Today, JavaScript is used to create websites, servers, mobile apps, games, desktop apps, and even interactive toasters through the Internet of Things.</p>
+          <p>JavaScript was designed to deliver incredible user experiences. The language is "event-driven" and built for user interaction. It allows applications to respond to clicks, mouse movement, characters typed, internet connection, window resizing, and so many other "events" in an intuitive way. </p>
+          <p>In addition to its interactivity, JavaScript is meant to be flexible. It is a full-stack language, incorporating both front-end and backend technologies, which is a major reason for its appeal.  Additionally, if other developers use your code in a way you didn't intend, or your users don't interact with the application as expected, JavaScript does its best to intelligently figure out what to do instead of immediately throwing errors and breaking the application (as happens in many other languages). JavaScript is the go-to language to build an application that will interact with real people.</p>
+          <p>Topics Covered:  Callbacks, higher order functions, closures, scope & execution context, object-oriented programming</p>
+          <p>Resources:  
+* JavaScript the Hard Parts workshops
+* Eloquent JavaScript
+* Kyle Simpson's "You Don't Know JavaScript"
+* Learning JavaScript Design Patterns
+* Front End Development </p>
+          <h3>Front-End Development</h3>
+          <p>Front-end development is the structured application of design and programming to enhance the experience of a user. Often seen as the bridge between the designer and the back-end, the front-end is increasingly at the heart of the user-experience and, more specifically, how an application feels.</p>
+          <p>The number of front-end technologies have skyrocketed over time. Because of this, tools and libraries are constantly changing. This has made fundamental principles increasingly important in order to adapt to and anticipate emerging technologies.</p>
+          <p>The goal of the front-end curriculum is to prepare developers to mediate between frameworks by being equally proficient in industry-leading technologies as well as front-end principles.</p>
+          <p>At the core of the front-end curriculum is responsiveness, performance, and accessibility. Surrounding these principles are approaches to DOM manipulation and single page applications. Codesmith residents implement architectural patterns such as the model-view-controller and examine design patterns including composition in React and two-way data binding in Angular.</p>
+          <p>Topics Covered: Single-page applications and Front-end structure, React, Angular </p>
+          <p>Resources: 
+* Front-End Masters
+* Mozilla Developer Network
+* Scotch</p>
+          <h3>Backend Development</h3>
+          <p>In the world of client-server processes (where we find The Internet) the back end is the 'server side', where the heavy lifting of business logic, security, and data storage happens. All of the webpages in the world and the data that populates them are served from backend systems.</p>
+          <p>Back end developers build and maintain server processes that provide Application Programming Interfaces. These server APIs are the bridges between web or mobile front ends and the data they require from backend data stores. That data may be delivered from databases, extracted from files, or pulled down from APIs on other servers. In order to protect this valuable data from hacks and exploitation, these processes are also responsible for managing security and user authentication.</p>
+          <p>Since back end servers can receive many thousands of requests from anywhere in the world at any time, developers focus on writing efficient and stable code. They often interact with DevOps engineers to ensure high availability of hardware resources, as well as DBAs (database administrators) to implement fast and reliable data fetching. And of course, the best back end engineers always regard the user's experience and thus work closely with front end developers.</p>
+          <p>Topics Covered: Servers (Node &amp; Express), Databases (MongoDB &amp; SQL), Authentication &amp; Authorization </p>
+          <h3 name="computer-science" id="computer-science">Computer Science</h3>
+          <p>Computer Science is a study of the foundations and practices involved in implementing computational applications. Codesmith explores the fundamental principles of computer science by exercising many of its key concepts: Data Structures, Algorithms, Time Complexity, Object-Oriented Programming, and Functional Programming</p>
+          <p>Computers store huge amounts of data and how we organize that data has major implications for its speed of access, ease of manipulation, and efficiency of storage. Residents learn about and implement core data structures taught in leading computer science curricula.</p>
+          <p>Designing algorithms is a process of achieving increasingly effective ways to solve a problem. Residents develop algorithms to solve some of the most prominent challenges in software engineering including sorting, path-finding, and searching.</p>
+          <p>The efficiency of an algorithm can be the difference between a product's success or failure. The curriculum dives into how to optimally design any algorithm with respect to its time complexity and computer memory used following the computer science standard of Big-O notation.</p>
+          <p>How you structure large applications can significantly impact their effectiveness. Two popular paradigms - object-oriented programming and functional programming - are both well-supported by JavaScript. Residents learn both and dive into the prototype chain in order to find out what's going on under the hood with pseudoclassical inheritance.</p>
+          <p>Topics Covered: Data Structures, Algorithms, Time Complexity and Big-O Analysis, Object Oriented and Functional Programming</p>
+          <h3 name="machine-learning" id="machine-learning">Machine Learning</h3>
+          <p>With the exponential growth of data generation in recent years, Machine Learning has quickly become an invaluable tool for building next-generation software solutions. The Codesmith Machine Learning unit includes an immersive introduction to the python programming language, gaining familiarity with common machine learning and data science libraries, and developing a deep understanding of the underlying concepts used daily by Machine Learning Software Engineers. The Machine Learning unit is designed to allow residents to build intelligent data driven applications.</p>
+          <p>Topics covered: Generating matrix representations of data, graphing libraries for data presentation and introspection, building powerful predictive machine learning algorithms from scratch</p>
+          <h3 name="technical-communication" id="technical-communication">Technical Communication</h3>
+          <p>Technical communication is one of the main predictors of success for students at Codesmith as well as software engineers in the professional realm. We recognize that coding, at Codesmith and in the software engineering world overall, is very rarely an individual endeavor. </p>
+          <h3 name="problem-solving" id="problem-solving">Problem Solving</h3>
+          <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source projects, develop as autonomous problem solvers and excellent communicators, and build expertise in computer science, fullstack JavaScript and machine learning.</p>
+          <p>At Codesmith, residents are consistently working in pairs and small teams and this makes the ability to clearly, accurately communicate ideas, expectations and problems vital. For this reason, developing technical communication skills is a principal focus of ours and we achieve this goal in a number of ways.</p>
+          <h3 id="pair-programming">Pair Programming</h3>
+          <p><img class="img-responsive" src=<%=require( "./images/photo-pair-programming.png") %> /></p>
+          <p>The most common method through which we practice technical communication is pair programming, and Codesmith residents can expect to spend literally hundreds of hours pairing with others in their cohort. The benefits of pair programming extend beyond an extra pair of eyes to find bugs in code. By pairing with a partner you are constantly exposed to new approaches and techniques and are challenged to talk through your own code in a way that is clear enough that another person can do the typing. In a short time, Codesmith residents truly to talk the talk.</p>
+          <h3 id="presentations">Presentations</h3>
+          <p>In addition to pairing, technical communication is developed through a number of presentations that all residents give during their 12-weeks in the program. Residents give a Tech Talk on a topic of their choice and present the projects they create throughout the program. This culminates in our Hiring Week, during which students present their final Production Project, and a related Tech Talk, to an audience that includes developers, engineers, and representatives from dozens of local companies. By the time students leave Codesmith, they are not only well-prepared to build incredible tools, they are able to describe the what, why, and how at a professional level.</p>
+          <h3 id="project-management">Project Management</h3>
+          <p>Building powerful applications and developer tools requires more than just technical ability. Project management is the art and science of planning out projects, monitoring them throughout the development process, and assessing their results. Without effective project management, teams are likely to run into many avoidable conflicts in the development process.</p>
+          <p>Throughout the project phase, Codesmith residents get extensive practice with project management. Starting a new project, one of the first steps is to break the project down into many smaller tasks. Residents use scrum boards to assign these tasks to team members, track their status, and assess the overall progress made on the project.</p>
+          <p>Because these projects involve multiple people working on different portions of the project, good project management places an emphasis on daily standups, a proper Git workflow, and code review. Residents conduct daily standups to brief their partners on what they have accomplished and any hurdles they may have in completing their current tasks. When a task is completed and ready to be merged with previous code, students employ strategies for minimizing conflicts that may slow down production. And before new code is merged, project partners conduct a rigorous review to ensure the code is accomplishing what it is intended to do.</p>
+          <p>Effective project management takes time and dedication - not only from the project manager - but from all team members. However, this effort pays off in end result and in the time it takes to reach it.</p>
+          <h2 name="hiring-support" id="hiring-support" class="page-header">Hiring Support</h2>
+          <h3 id="precourse">Precourse</h3>
+          <p>In the weeks leading up to Codesmith, admitted residents are required to complete precourse assignments designed to accelerate their JavaScript growth and learning. The precourse is done remotely through GitHub, with weekly office hours for guidance. The precourse introduces residents to the pace of learning at Codesmith, and ensures that everyone is ready to dive into the program on Day 1. </p>
+          <p>The precourse takes students through basics of CSS and HTML to more advanced JavaScript functionality with Ajax and complex parsers.</p>
+          <h3 id="traditions">Traditions</h3>
+          <p>An important aspect of life at Codesmith are the activities that aren’t associated with JavaScript. Staff and students bond through relay races, bonfires, camping trips to Joshua Tree, and biweekly breakaway meetings to chat, to name a few. Longer lunches incorporate kickball, basketball, and yoga as well as trips to nearby gyms. </p>
+          <p>The end of each cohort culminates with a graduation celebration, and alumni are frequently on-site for larger Codesmith alumni social events and advanced workshops.</p>
+          <h3 id="alumni-community">Alumni Community</h3>
+          <p>The Codesmith Alumni Community is a community for life. Codesmith graduates are working everywhere from Los Angeles to Boston to Shanghai, and their accomplishments and success continue to grow every day.</p>
+          <p>Codesmith Alumni are able to take advantage of this network of like-minded software engineers via an Alumni Slack channel, an Alumni-only workspace at Codesmith HQ, cross-cohort reunions, exclusive invites to new Codesmith programs and initiatives (like the Machine Learning Beta program), and unlimited hiring support throughout the course of their careers. </p>
+          <h3 id="admissions">Admissions</h3>
+          <p>To apply you must complete a coding challenge and questions about your experience. You may also apply through the special challenge available at JavaScript the Hard Parts sessions. If you are successful you will be invited to interview for the program.</p>
+          <p>The two interviews assess your potential in the five areas that make an exceptional engineer.</p>
+          <p>1. Analytical problem-solving - How do you use code as a tool to reason about about new problems you face in the technical interview</p>
+          <p>2. Technical communication - Talking through your code precisely and clearly (a huge part of what makes an effective engineer)</p>
+          <p>3. Non-technical communication - Will you be thoughtful and supportive of others through the tough hours and work</p>
+          <p>4. How you handle hitting a block - How do you debug, take feedback when you hit a block in your understanding (we make sure you hit a moment like this in the interview)</p>
+          <p>5. JavaScript experience - This is surprisingly not the best predictor of growth-rate but is the 5th most important factor</p>
+          <p>The first interview is non-technical, the second is technical. In the technical interview you work through coding challenges with an engineer on the team. We're interested in seeing how you tackle problems and communicate your ideas. </p>
+          <p>We realize that the Codesmith admissions process can feel intimidating but we have created numerous free public classes to help you prepare - you can find them all here.</p>
+          <h2 id="tuition-financial-aid-scholarships" class="page-header">Tuition, Financial Aid, &amp; Scholarships</h2>
+          <h3 id="tuition">Tuition</h3>
+          <p>The total cost of the program is $17,200. A deposit of $2,200 is required shortly after acceptance, and the remaining $15,000 is due before the start of class.</p>
+          <h3 id="financial-aid">Financial Aid</h3>
+          <p>Your financial situation should never keep you from achieving your goals. Codesmith has partnered with Skills Fund to make this possible.</p>
+          <p>With Skills Fund, Codesmith students may borrow between $2,000 and $15,000 for the program with 3 and 5 year payment terms available and 2-month post-graduation payment grace period.</p>
+          <p>You can qualify for a loan with:</p>
+          <ul>
+            <li>No income or employment used in underwriting</li>
+            <li>One fixed universal interest rate for all students (regardless of your credit score)</li>
+          </ul>
+          <p>Learn more at http://codesmith.skills.fund/</p>
+          <h3 id="scholarships">Scholarships</h3>
+          <p>Codesmith is committed to strengthening and growing a broad and deep community of software engineers from all backgrounds, and the Codesmith $100k scholarship fund is an important part of this commitment.</p>
+          <p>Women, minorities, and veterans are severely underrepresented in the technology community. Codesmith offers scholarships for talented people from underrepresented backgrounds.</p>
+          <p>To apply for these scholarships you must identify as a woman (), under-represented minority (defined as African-American, Hispanic/Latino(a), Pacific Islander or Native American).</p>
+          <p>Plan to apply for a scholarship and Skills Fund loan? Your requested Skills Fund loan amount can be downward adjusted as needed prior to your first day in program. If you receive your scholarship after your tuition financing has been disbursed, you can apply your scholarship to your loan balance at anytime without a prepayment penalty.</p>
+        </div>
+        <div class="col-sm-4">
+          <div id="sidebar" class="well sidebar">
+            <ul class="list-unstyled">
+              <li><a href="#codesmith-program"><strong>The Codesmith Program</strong></a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="#a-hub-of-engineering"><strong>A Hub of Engineering</strong></a></li>
+              <li><a href="#socal-react">SoCal React</a></li>
+              <li><a href="#guest-speakers">Guest Speakers</a></li>
+              <li><a href="#production-projects">Production Projects</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="#admissions"><strong>Admissions</strong></a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="#cirriculum"><strong>The Core Curriculum</strong></a></li>
+              <li><a href="#front-end">Front-End</a></li>
+              <li><a href="#backend">Back-End</a></li>
+              <li><a href="#computer-science">Computer Science</a></li>
+              <li><a href="#js-principles">JS Principles</a></li>
+              <li><a href="#machine-learning">Machine Learning</a></li>
+              <li><a href="#project-management">Project Management</a></li>
+              <li><a href="#devops">DevOps</a></li>
+              <li><a href="#precourse">Precourse</a></li>
+              <li><a href="#technical-communication">Technical Communication</a></li>
+              <li><a href="#problem-solving">Problem Solving</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="#hiring-support"><strong>Hiring Support</strong></a></li>
+              <li><a href="#mentorship">Mentorship from Industry</a></li>
+              <li><a href="#experts">Experts</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="#community"><strong>Community</strong></a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="#scholarship-fund"><strong>Scholarship Fund</strong></a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="#students"><strong>Students</strong></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-xs-4">
+              <ul class="list-unstyled">
+                <li><a href="#"><strong>About Codesmith</strong></a></li>
+                <li><a href="#">Another</a></li>
+                <li><a href="#">Footer Stuff</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Some Page</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-4">
+              <ul class="list-unstyled">
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Another</a></li>
+                <li><a href="#">Footer Stuff</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Some Page</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-4">
+              <ul class="list-unstyled">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instragram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <address>
+            <strong>Codesmith</strong><br />
+            5300 Beethoven Street, PH Floor (4th)<br />
+            Los Angeles, CA 90066<br />
+            <abbr title="Email">E:</abbr> hello@codesmith.io<br />
+            <abbr title="Phone">P:</abbr> (323) 736-0715
+          </address>
+        </div>
+      </div>
+      <p>
+        &copy; 2015 - 2017 Codesmith. All Rights Reserved. <a href="#">Terms and Conditions</a> – <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
