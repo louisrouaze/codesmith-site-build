@@ -1,204 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Codesmith - Software Engineering Immersive</title>
 </head>
-
 <body>
-  <nav id="main-nav" class="navbar navbar-default">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-          aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <!--notice images must use ejs and 'requre'-->
-          <a class="navbar-brand" href="/"><img src=<%=require( "./images/codesmith-logo-md.png") %> /></a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="/faq.html">12 Week Academy</a></li>
-          <li><a href="#">Events &amp; Workshops</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQ <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Recruitment</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
-          <li><a href="#">The July 2017 cohort is now open.</a></li>
-          <li><a class="btn btn-primary" href="#">Apply</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
+<nav id="main-nav" class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--notice images must use ejs and 'requre'-->
+      <a class="navbar-brand" href="/"><img src=<%=require( "./images/codesmith-logo-md.png") %> /></a>
     </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7">
-          <h1 class="margin-top-none page-header">We created Codesmith to be a hub of groundbreaking technology.</h1>
-          <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source projects, develop as autonomous problem solvers and excellent communicators, and build expertise in computer science, fullstack JavaScript and machine learning.</p>
-          <p><strong>Projects have been featured at <a href="#">Google I/O</a>, retweeted by <a href="#">Brendon Eich</a>, and collected over <a href="#">20,562 Github stars</a>.</strong></p>
-          <p>The Codesmith alumni network continues to support graduates for the entirety of their career as they become leaders in their fields. We believe good developers become great through building with a tight-knit community. This is the essence of Codesmith.</p>
-        </div>
-        <div class="col-sm-5">
-          <p><img class="img-responsive" src=<%=require( "./images/slide-img-01.png") %> /></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <h2 class="page-header red">Make an Impact</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="row">
-            <div class="col-xs-5"><img class="img-responsive" src=<%=require( "./images/quote-mike.png") %> /></div>
-            <div class="col-xs-7">
-              <p>At [company name] I use [technology] every day to make healthcare accessible for everyone.<br />
-              <small>—John Doe</small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="row">
-            <div class="col-xs-5"><img class="img-responsive" src=<%=require( "./images/quote-jenna.png") %> /></div>
-            <div class="col-xs-7">
-              <p>WeVR employs React to do x.<br />
-              <small>—Jane Doe</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <p>The residents go on to jobs from mid level developers to CTOs, earning on average $95k-$130k, but far more importantly they are transforming industries from healthcare to education. Graduates can also be found at LinkedIn, Microsoft, Amazon, and more.</p> 
-          <p>To further our impact, Codesmith offers a <a href="#">$100k scholarship fund</a>, with at least 80% of recipients to be drawn from communities underrepresented in technology. Our partnership with <a href="#">Skills Fund</a> also makes access to a world class education possible. </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <h2 class="page-header green">Codesmith is a Community of Experimenters in Person and Online</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <h5 class="margin-top-none">Upcoming Open Workshops</h5>
-          <dl class="dl-horizontal event-list">
-            <dt><a href="#">Thu Jun 8</a></dt>
-            <dd><a href="#">JS - The Hard Parts (DTLA): Closure, Scope &amp; Execution Context</a></dd>
-            <dt><a href="#">Sat Jun 10</a></dt>
-            <dd><a href="#">JavaScript The Hard Parts: Callbacks &amp; Higher Order Functions</a></dd>
-            <dt><a href="#">Tue Jun 13</a></dt>
-            <dd><a href="#">freeCodeCamp Algorithm Challenges</a></dd>
-            <dt><a href="#">Wed Jun 14</a></dt>
-            <dd><a href="#">Framework Info Session: Part-Time JavaScript Program (Online)</a></dd>
-            <a href="#"><small><strong>More Events</strong> <span class="caret right"></span></small></a>
-          </dl>
-
-        </div>
-        <div class="col-sm-6">
-          <h5 class="margin-top-none">Latest Research &amp; Teaching</h5>
-          <ul class="list-unstyled news-feed">
-            <li><a href="#">Codesmith Announces $100k Scholarship Fun</a></li>
-            <li><a href="#">Codesmith Launches New Machine Learning Program</a></li>
-            <li><a href="#">Codesmith Offers New Opportunities with VR Studio</a></li>
-            <li><a href="#">Try the Recursion Challenge</a></li>
-            <a href="#"><small><strong>More News</strong> <span class="caret right"></span></small></a>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/faq.html">12 Week Academy</a></li>
+        <li><a href="#">Events &amp; Workshops</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQ <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
           </ul>
-        </div>
+        </li>
+        <li><a href="#">Recruitment</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
+        <li><a href="#">The July 2017 cohort is now open.</a></li>
+        <li><a class="btn btn-primary" href="#">Apply</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <h1 class="margin-top-none page-header">We created Codesmith to be a hub of groundbreaking technology.</h1>
+        <p>The heart of Codesmith is the _Software Engineering Immersive_, a program where engineers build compelling open-source projects, develop as autonomous problem solvers and excellent communicators, and build expertise in computer science, fullstack JavaScript and machine learning.</p>
+        <p><strong>Open source projects developed during the program have been featured at <a href = "#">Google I/O</a>, and collected over _20,000_ Github stars.</strong></p>
+        <p>The Codesmith alumni network continues to support graduates for the _entirety of their career_ as they become leaders in their fields. We believe good developers become great through building with a tight-knit community. This is the essence of Codesmith. </p>
       </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <form class="form-inline text-center email-signup">
-            <div class="form-group">
-            <label for="exampleInputName2">Join Our Community: </label>
-              <label class="sr-only" for="exampleInputPassword3">Name</label>
-              <input type="name" class="form-control" id="exampleInputname3" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputEmail3">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-            </div>
-            <button type="submit" class="btn btn-default btn-sm btn-primary btn-signup">Sign Up</button>
-          </form>
-        </div>
+      <div class="col-sm-5">
+        <p><img class="img-responsive" src=<%=require( "./images/slide-img-01.png") %> /></p>
       </div>
     </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7">
-          <div class="row">
-            <div class="col-xs-4">
-              <ul class="list-unstyled">
-                <li><a href="#"><strong>About Codesmith</strong></a></li>
-                <li><a href="#">Another</a></li>
-                <li><a href="#">Footer Stuff</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Some Page</a></li>
-              </ul>
-            </div>
-            <div class="col-xs-4">
-              <ul class="list-unstyled">
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Another</a></li>
-                <li><a href="#">Footer Stuff</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Some Page</a></li>
-              </ul>
-            </div>
-            <div class="col-xs-4">
-              <ul class="list-unstyled">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instragram</a></li>
-                <li><a href="#">YouTube</a></li>
-                <li><a href="#">LinkedIn</a></li>
-              </ul>
-            </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="page-header red">Make an Impact</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-11">
+        <div class="row">
+          <div class = "col-xs-5"><img class="img-responsive" src=<%=require("./images/quote-jenna.png") %> /></div>
+          <div class="col-xs-7">
+            <p> “At Impact Health, we work to make healthcare accessible and transparent through various tools, including our recommendation app/algorithm which suggests optimal health insurance plans for individuals based on several personal details. We’re also working to build out our concierge service through a centralized app where customers can get questions answered, upload prescriptions, contest medical bills, and schedule appointments. As we continue to build out these tools, we’re integrating machine learning to assist our customers more quickly, smartly, and efficiently.” </p>
           </div>
         </div>
-        <div class="col-sm-5">
-          <address>
-            <strong>Codesmith</strong><br />
-            5300 Beethoven Street, PH Floor (4th)<br />
-            Los Angeles, CA 90066<br />
-            <abbr title="Email">E:</abbr> hello@codesmith.io<br />
-            <abbr title="Phone">P:</abbr> (323) 736-0715
-          </address>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>The residents go on to jobs from mid level developers to CTOs, earning on average $95k-$130k, but far more importantly they are transforming industries from healthcare to education. Graduates can be found at LinkedIn, Microsoft, Amazon, and more.</p>
+        <p>To further our impact, Codesmith offers a $100k scholarship fund, with at least 80% of recipients to be drawn from communities underrepresented in technology. Our partnership with <a href="http://codesmith.skills.fund/">Skills Fund</a> also makes access to a world class education possible. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="page-header green">Codesmith is a Community of Experimenters in Person and Online</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <h5 class="margin-top-none">Upcoming Open Workshops</h5>
+        <dl class="dl-horizontal event-list">
+          <dt><a href="#">Thu Jun 8</a></dt>
+          <dd><a href="#">JS - The Hard Parts (DTLA): Closure, Scope &amp; Execution Context</a></dd>
+          <dt><a href="#">Sat Jun 10</a></dt>
+          <dd><a href="#">JavaScript The Hard Parts: Callbacks &amp; Higher Order Functions</a></dd>
+          <dt><a href="#">Tue Jun 13</a></dt>
+          <dd><a href="#">freeCodeCamp Algorithm Challenges</a></dd>
+          <dt><a href="#">Wed Jun 14</a></dt>
+          <dd><a href="#">Framework Info Session: Part-Time JavaScript Program (Online)</a></dd>
+          <a href="#"><small><strong>More Events</strong> <span class="caret right"></span></small></a>
+        </dl>
+      </div>
+      <div class="col-sm-6">
+        <h5 class="margin-top-none">Latest Research &amp; Teaching</h5>
+        <ul class="list-unstyled news-feed">
+          <li><a href="#">Codesmith Announces $100k Scholarship Fun</a></li>
+          <li><a href="#">Codesmith Launches New Machine Learning Program</a></li>
+          <li><a href="#">Codesmith Offers New Opportunities with VR Studio</a></li>
+          <li><a href="#">Try the Recursion Challenge</a></li>
+          <a href="#"><small><strong>More News</strong> <span class="caret right"></span></small></a>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-inline text-center email-signup">
+          <div class="form-group">
+            <label for="exampleInputName2">Join Our Community: </label>
+            <label class="sr-only" for="exampleInputPassword3">Name</label>
+            <input type="name" class="form-control" id="exampleInputname3" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+          </div>
+          <button type="submit" class="btn btn-default btn-sm btn-primary btn-signup">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <li><a href="#"><strong>About Codesmith</strong></a></li>
+              <li><a href="#">Another</a></li>
+              <li><a href="#">Footer Stuff</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Some Page</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Another</a></li>
+              <li><a href="#">Footer Stuff</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Some Page</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instragram</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <p>
-        &copy; 2015 - 2017 Codesmith. All Rights Reserved. <a href="#">Terms and Conditions</a> – <a href="#">Privacy Policy</a>
-      </p>
+      <div class="col-sm-5">
+        <address>
+          <strong>Codesmith</strong><br />
+          5300 Beethoven Street, PH Floor (4th)<br />
+          Los Angeles, CA 90066<br />
+          <abbr title="Email">E:</abbr> hello@codesmith.io<br />
+          <abbr title="Phone">P:</abbr> (323) 736-0715
+        </address>
+      </div>
     </div>
-  </footer>
+    <p>
+      &copy; 2015 - 2017 Codesmith. All Rights Reserved. <a href="#">Terms and Conditions</a> – <a href="#">Privacy Policy</a>
+    </p>
+  </div>
+</footer>
 </body>
-
 </html>
