@@ -1,5 +1,3 @@
-// add all custom vanilla js functionality here
-
 import css from './app.scss';
 
 if (process.env.NODE_ENV !== 'production') {
@@ -7,8 +5,20 @@ if (process.env.NODE_ENV !== 'production') {
   require('file-loader!./faq.html');
 }
 
-window.onload = () => {
-  // when the window scrolls past 30pixels, the main nav becomes fixed
+function rotateImages(containerElement) {
+  setInterval(() => {
+    // get current active img element
+    const currentImg = containerElement.getElementsByClassName('active')[0];
+    currentImg.classList.remove('active');
+
+    // get next img element
+    const nextImg = currentImg.nextElementSibling || containerElement.firstElementChild;
+    nextImg.classList.add('active');
+  }, 2000);
+}
+
+// when the window scrolls past 30pixels, the main nav becomes fixed
+function respondToScroll() {
   window.addEventListener('scroll', () => {
     const mainNav = document.getElementById('main-nav');
     const sidebar = document.getElementById('sidebar');
@@ -22,19 +32,30 @@ window.onload = () => {
       document.body.classList.remove('nav-pad');
       if (sidebar) sidebar.classList.remove('on-scroll');
     }
-
-
   });
+}
 
+// sidebar page-jump-to-id navigation
+function jumpToIdNav() {
   // populate sidebar navigation links for FAQ page
   const sidebarLinks = document.querySelectorAll('.sidebar a');
 
   // add event functionality for sidebar navigation
   for (let i = 0; i < sidebarLinks.length; i++) {
-    sidebarLinks[i].addEventListener('click', (e) => {
+    sidebarLinks[i].addEventListener('click', e => {
       e.preventDefault();
       document.getElementById(e.target.hash.slice(1)).scrollIntoView({ behavior: 'smooth' });
       window.scrollBy(0, -140);
     });
   }
+}
+
+window.onload = () => {
+  const imgRotateElement = document.getElementById('img-rotate');
+
+  respondToScroll();
+  jumpToIdNav();
+
+  if (imgRotateElement) rotateImages(imgRotateElement);
 };
+
