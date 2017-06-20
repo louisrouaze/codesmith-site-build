@@ -79,8 +79,8 @@ module.exports = {
     // Additional html/ejs templates must each have their own instance
     new HtmlWebpackPlugin({
       hash: true,
-      template: './src/faq.html',
-      filename: 'faq.html',
+      template: './src/program.html',
+      filename: 'program.html',
       // minify: {
       //   collapseWhitespace: true,
       // },

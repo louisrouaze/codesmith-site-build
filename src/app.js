@@ -2,10 +2,11 @@ import css from './app.scss';
 
 if (process.env.NODE_ENV !== 'production') {
   require('file-loader!./index.html');
-  require('file-loader!./faq.html');
+  require('file-loader!./program.html');
 }
 
 function rotateImages(containerElement) {
+  console.log('x', containerElement.getElementsByClassName)
   setInterval(() => {
     // get current active img element
     const currentImg = containerElement.getElementsByClassName('active')[0];
@@ -14,7 +15,7 @@ function rotateImages(containerElement) {
     // get next img element
     const nextImg = currentImg.nextElementSibling || containerElement.firstElementChild;
     nextImg.classList.add('active');
-  }, 2000);
+  }, 8000);
 }
 
 // when the window scrolls past 30pixels, the main nav becomes fixed

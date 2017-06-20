@@ -24,7 +24,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/faq.html">12 Week Academy</a></li>
+        <li><a href="/program.html">12 Week Academy</a></li>
         <li><a href="#">Events &amp; Workshops</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQ <span class="caret"></span></a>
@@ -55,25 +55,33 @@
     <div class="row">
       <div class="col-sm-7">
         <h1 class="margin-top-none page-header">We created Codesmith to be a hub of groundbreaking technology.</h1>
-        <p>The heart of Codesmith is the _Software Engineering Immersive_, a program where engineers build compelling open-source projects, develop as autonomous problem solvers and excellent communicators, and build expertise in computer science, fullstack JavaScript and machine learning.</p>
-        <p><strong>Open source projects developed during the program have been featured at <a href = "#">Google I/O</a>, and collected over _20,000_ Github stars.</strong></p>
-        <p>The Codesmith alumni network continues to support graduates for the _entirety of their career_ as they become leaders in their fields. We believe good developers become great through building with a tight-knit community. This is the essence of Codesmith. </p>
+        <p>The heart of Codesmith is the <a href="program.html">Software Engineering Immersive</a>, a program where engineers build compelling open-source projects, develop as autonomous problem solvers and excellent communicators, and build expertise in computer science, fullstack JavaScript and machine learning.</p>
+        <p><strong>Open source projects developed during the program have been featured at <a href="https://www.codesmith.io/blog/2017-06-16-webDSP">Google I/O</a>, and collected over 20,000 Github stars.</strong></p>
+        <p>The Codesmith alumni network continues to support graduates for the entirety of their career as they become leaders in their fields. We believe good developers become great through building with a tight-knit community. This is the essence of Codesmith. </p>
       </div>
-      <div class="col-sm-5">
-        <p><img class="img-responsive" src=<%=require( "./images/slide-img-01.png") %> /></p>
+      <div id="img-rotate" class="col-sm-5 img-rotate">
+        <img class="img-responsive active" src=<%=require( "./images/slide-img-01.png") %> />
+        <img class="img-responsive" src=<%=require( "./images/slide-img-02.png") %> />
+        <img class="img-responsive" src=<%=require( "./images/slide-img-03.png") %> />
+        <img class="img-responsive" src=<%=require( "./images/slide-img-04.png") %> />
+        <img class="img-responsive" src=<%=require( "./images/slide-img-05.png") %> />
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="page-header red">Make an Impact</h2>
+        <h2 class="page-header red">Impact</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-11">
+      <div class="col-sm-12">
         <div class="row">
-          <div class = "col-xs-5"><img class="img-responsive" src=<%=require("./images/quote-jenna.png") %> /></div>
-          <div class="col-xs-7">
-            <p> “At Impact Health, we work to make healthcare accessible and transparent through various tools, including our recommendation app/algorithm which suggests optimal health insurance plans for individuals based on several personal details. We’re also working to build out our concierge service through a centralized app where customers can get questions answered, upload prescriptions, contest medical bills, and schedule appointments. As we continue to build out these tools, we’re integrating machine learning to assist our customers more quickly, smartly, and efficiently.” </p>
+          <div class = "col-xs-4">
+            <p>
+              <img class="img-responsive" src=<%=require("./images/quote-jenna.png") %> />
+            </p>
+          </div>
+          <div class="col-xs-8">
+            <p><small>“At Impact Health, we work to make healthcare accessible and transparent through various tools, including our recommendation app/algorithm which suggests optimal health insurance plans for individuals based on several personal details. We’re also working to build out our concierge service through a centralized app where customers can get questions answered, upload prescriptions, contest medical bills, and schedule appointments. As we continue to build out these tools, we’re integrating machine learning to assist our customers more quickly, smartly, and efficiently.”</small></p>
           </div>
         </div>
       </div>
@@ -117,17 +125,17 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <form class="form-inline text-center email-signup">
+        <form action="//codesmith.us10.list-manage.com/subscribe/post?u=da60d9c5e75cbb19470ec4fa6&amp;id=ac051d2a78" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline text-center email-signup" target="_blank" novalidate="true">
           <div class="form-group">
-            <label for="exampleInputName2">Join Our Community: </label>
-            <label class="sr-only" for="exampleInputPassword3">Name</label>
-            <input type="name" class="form-control" id="exampleInputname3" placeholder="Name">
+            <label for="mce-NAME">Join Our Community: </label>
+            <label class="sr-only" for="mce-NAME">Name</label>
+            <input type="name" name="NAME" class="name form-control" id="mce-NAME"  placeholder="Name">
           </div>
           <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail3">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+            <label class="sr-only" for="mce-EMAIL">Email address</label>
+            <input type="email" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
           </div>
-          <button type="submit" class="btn btn-default btn-sm btn-primary btn-signup">Sign Up</button>
+          <button type="submit" class="btn btn-default btn-sm btn-primary btn-signup"  name="subscribe">Sign Up</button>
         </form>
       </div>
     </div>
@@ -140,9 +148,9 @@
         <div class="row">
           <div class="col-xs-4">
             <ul class="list-unstyled">
-              <li><a href="#"><strong>About Codesmith</strong></a></li>
-              <li><a href="#">Another</a></li>
-              <li><a href="#">Footer Stuff</a></li>
+              <li><a href="#"><strong>Company</strong></a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Some Page</a></li>
             </ul>
