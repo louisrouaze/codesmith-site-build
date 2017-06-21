@@ -12,7 +12,7 @@ Build production files by running `yarn prod`.
 
 ## Known Issues
 
-- .JPG files are not being transpiled. Using .PNG files for now and manually replacing them with .JPG files until this is fixed.
+- If .jpg files are causing compile errors, run `brew install libpng`.
 - New image files will not be recongnized until running `webpack` in terminal.
 - Extra html/ejs templates must be mannually added to `webpack.config.js` and `src\app.js`.
 
