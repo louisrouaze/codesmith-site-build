@@ -50,7 +50,10 @@
       </div>
       <div class="col-sm-5">
         <div id="img-rotate" class="img-rotate">
-          <img class="img-responsive active" src=<%=require( "./images/slide-img-01.png") %> />
+          <div class="height-fixer">
+            <img class="img-responsive" src=<%=require( "./images/slide-img-01.png") %> />
+          </div>
+          <img class="img-responsive first active" src=<%=require( "./images/slide-img-01.png") %> />
           <img class="img-responsive" src=<%=require( "./images/slide-img-02.png") %> />
           <img class="img-responsive" src=<%=require( "./images/slide-img-03.png") %> />
           <img class="img-responsive" src=<%=require( "./images/slide-img-04.png") %> />

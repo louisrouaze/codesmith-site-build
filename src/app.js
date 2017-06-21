@@ -13,7 +13,7 @@ function rotateImages(containerElement) {
     currentImg.classList.remove('active');
 
     // get next img element
-    const nextImg = currentImg.nextElementSibling || containerElement.firstElementChild;
+    const nextImg = currentImg.nextElementSibling || containerElement.getElementsByClassName('first')[0];
     nextImg.classList.add('active');
   }, 8000);
 }

@@ -400,17 +400,23 @@ input:-moz-placeholder { @include placeholder-style(); }
   }
 }
 
-@media (max-width: $screen-xs-max) {
-  .img-rotate {
-    height: 980px; // temporary fix
-  }
-}
 
-.img-rotate > img {
+.img-rotate {
+
+  > img {
     opacity: 0;
+    margin-left: -30px;
+    padding: 0 30px;
     position: absolute;
      -webkit-transition: all 1s linear;
     transition: all 1.5s linear;
+  }
+
+  > .height-fixer {
+    position: fixed;
+    display: none;
+  }
+
 }
 
 .img-rotate > img.active {
