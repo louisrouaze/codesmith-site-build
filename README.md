@@ -26,6 +26,7 @@ Urgent:
 - Integrate into codemisth-public-site repo as an .ejs template (adjust proper routing)
 
 Sooner:
+- Fix custom font not showing up on remote computers
 - Update head meta icons
 - lazy-loading functionality for homepage image slideshow.
 - create fix to resize program.html's sidenav on overflow
@@ -38,3 +39,4 @@ Later:
 - Blog Feed Page
 - Single Blog Post Page
 - Global Style Guide
+- Add validation to sign-up form on homepage
