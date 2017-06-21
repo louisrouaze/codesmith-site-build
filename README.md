@@ -31,6 +31,7 @@ Sooner:
 - fix styling quirks with mobile nav
 
 Later:
+- Smoother image-rotater
 - Manually roll out JS functionality for main nav behaviors in order to drop Bootstrap's JS. Use bootstrap native (a vanilla js implementation of bootstrap's js) in the meantime.
 - Refactor production stylesheet to symantic class names.
 - Event Page
@@ -38,3 +39,4 @@ Later:
 - Single Blog Post Page
 - Global Style Guide
 - Add validation to sign-up form on homepage
+- Viewport-based margins

@@ -402,7 +402,6 @@ input:-moz-placeholder { @include placeholder-style(); }
 
 
 .img-rotate {
-
   > img {
     opacity: 0;
     margin-left: -30px;
@@ -412,13 +411,7 @@ input:-moz-placeholder { @include placeholder-style(); }
     transition: all 1.5s linear;
   }
 
-  > .height-fixer {
-    position: fixed;
-    display: none;
+  > img.active {
+      opacity: 1;
   }
-
-}
-
-.img-rotate > img.active {
-    opacity: 1;
 }
