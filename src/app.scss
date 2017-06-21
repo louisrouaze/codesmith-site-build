@@ -175,7 +175,6 @@ a, a:hover, a:focus, a:active {
 }
 
 
-
 // body .nav a.btn-primary.btn {
 //   @include vert-gradient($brand-primary);
 // }
@@ -350,7 +349,7 @@ footer {
   font-size: .75em;
   text-transform: uppercase;
   color: $gray-dark;
-  
+
 }
 
 ::-webkit-input-placeholder { @include placeholder-style(); }
@@ -388,6 +387,15 @@ input:-moz-placeholder { @include placeholder-style(); }
     @media (max-width: $screen-xs-max) {
        display: none;
     }
+
+  &.sidebar:hover {
+    .col-sm-4 {
+      position: relative;
+    }
+    overflow-y: auto;
+    max-height: 100%;
+    padding-bottom: 13%;
+  }
 
     a {
       text-decoration: none;
