@@ -19,7 +19,6 @@ Build production files by running `yarn prod`.
 ## To-do
 
 Urgent:
-- Add names and titles under guest-speaker images
 - Run production build by running `yarn prod` then replace .png photos (that are not logos) with compressed .jpg files
 - Integrate into codemisth-public-site repo as an .ejs template (adjust proper routing)
 
