@@ -400,6 +400,12 @@ input:-moz-placeholder { @include placeholder-style(); }
   }
 }
 
+@media (max-width: $screen-xs-max) {
+  .img-rotate {
+    height: 980px; // temporary fix
+  }
+}
+
 .img-rotate > img {
     opacity: 0;
     position: absolute;

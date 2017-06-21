@@ -18,11 +18,23 @@ Build production files by running `yarn prod`.
 
 ## To-do
 
+Urgent:
+- update "more news" and "more events" links on homepage
+- homepage's slideshow needs absolute positioning fix when resized to mobile screen sizes
+- Add names and titles under guest-speaker images
+- Run production build by running `yarn prod` then replace .png photos (that are not logos) with compressed .jpg files
+- Integrate into codemisth-public-site repo as an .ejs template (adjust proper routing)
+
+Sooner:
+- Update head meta icons
+- lazy-loading functionality for homepage image slideshow.
+- create fix to resize program.html's sidenav on overflow
+- fix styling quirks with mobile nav
+
+Later:
+- Manually roll out JS functionality for main nav behaviors in order to drop Bootstrap's JS. Use bootstrap native (a vanilla js implementation of bootstrap's js) in the meantime.
 - Refactor production stylesheet to symantic class names.
-- JS functionality for homepage image slideshow.
-- Manually roll out JS functionality for main nav behaviors in order to drop Bootstrap's JS.
 - Event Page
 - Blog Feed Page
 - Single Blog Post Page
 - Global Style Guide
-- Update About page's images. 
