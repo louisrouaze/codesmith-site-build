@@ -5,7 +5,7 @@ A Webpack developement environment for compiling production CSS and JavaScript u
 ## How to begin?
 
 1. Run `yarn install` to install all the dependencies
-2. Run `yarn dev` for development mode
+2. Run `yarn start` for development mode
 3. New browser window should open automatically.
 
 Build production files by running `yarn prod`.
