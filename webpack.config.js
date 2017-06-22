@@ -102,7 +102,12 @@ module.exports = {
     // Make sure this is after ExtractTextPlugin!
     new PurifyCSSPlugin({
       // Give paths to parse for rules. These should be absolute!
-      paths: glob.sync(path.join(__dirname, 'src/*.html')),
+      paths: glob.sync(
+        path.join(__dirname, 'src/*.html')
+      ),
+      purifyOptions: {
+        whitelist: ['on-scroll', 'nav-pad'],
+      },
     }),
   ],
 };

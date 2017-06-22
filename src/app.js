@@ -6,7 +6,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 function rotateImages(containerElement) {
-  console.log('x', containerElement.getElementsByClassName)
   setInterval(() => {
     // get current active img element
     const currentImg = containerElement.getElementsByClassName('active')[0];
