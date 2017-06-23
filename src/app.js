@@ -22,21 +22,18 @@ function respondToScroll() {
   window.addEventListener('scroll', () => {
     const mainNav = document.getElementById('main-nav');
     const sidebar = document.getElementById('sidebar');
-
-    let dif = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let height = dif + document.documentElement.scrollHeight + 'px';
-    let relHeight = document.documentElement.scrollHeight * .93;
-
-    console.log('height', relHeight);
+    const relHeight = document.documentElement.scrollHeight - sidebar.clientHeight - 675;
 
     if (window.scrollY > 30 && window.scrollY <= relHeight) {
       if (mainNav) mainNav.classList.add('on-scroll', 'navbar-fixed-top');
       document.body.classList.add('nav-pad');
-      if (sidebar) sidebar.style.position = 'fixed';
-      if (sidebar) sidebar.style.marginTop = '-30px';
+      if (sidebar) {
+        sidebar.style.position = 'fixed';
+        sidebar.style.top = 'inherit';
+      }
     } else if (window.scrollY > relHeight) {
       sidebar.style.position = 'absolute';
-      sidebar.style.marginTop = relHeight + 'px';
+      sidebar.style.top = relHeight + 'px';
     } else {
       mainNav.classList.remove('on-scroll', 'navbar-fixed-top');
       document.body.classList.remove('nav-pad');
