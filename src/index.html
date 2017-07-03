@@ -1,139 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Codesmith teaches software engineering through an immersive, career accelerating program taught by leading industry experts."
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="metadata.name" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.codesmith.io" />
+  <meta property="og:description" content="Codesmith teaches software engineering through an immersive, career accelerating program taught by leading industry experts."
+  />
+  <meta property="og:site_name" content="Codesmith" />
+  <meta property="og:image" content="metadata.image" />
   <title>Codesmith - Software Engineering Immersive</title>
 </head>
+
 <body>
-<nav id="main-nav" class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-              aria-expanded="false">
+  <nav id="main-nav" class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!--notice images must use ejs and 'requre'-->
-      <a class="navbar-brand" href="/"><img src=<%=require( "./images/codesmith-logo-md.png") %> /></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="/program.html">12 Week Academy</a></li>
-        <li><a href="https://www.codesmith.io/events">Events &amp; Workshops</a></li>
-        <li><a href="https://www.codesmith.io/faq">FAQ</a></li>
-        <li><a href="https://www.codesmith.io/recruitment">Recruitment</a></li>
-        <li><a href="https://www.codesmith.io/blog">Blog</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
-        <li><a href="https://www.codesmith.io/apply-login/apply">The July 2017 cohort is now open.</a></li>
-        <li><a class="btn btn-primary" href="https://www.codesmith.io/apply-login/apply">Apply</a></li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
-<main>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-7">
-        <h1 class="margin-top-none page-header">We created Codesmith to be a hub of groundbreaking technology.</h1>
-        <p>The heart of Codesmith is the <a href="program.html">Software Engineering Immersive</a>, a program where engineers build compelling open-source projects, develop as autonomous problem solvers and excellent communicators, and build expertise in computer science, fullstack JavaScript and machine learning.</p>
-        <p><strong>Open source projects developed during the program have been featured at <a href="https://www.codesmith.io/blog/2017-06-16-webDSP">Google I/O</a>, and collected over 20,000 Github stars.</strong></p>
-        <p>The Codesmith alumni network continues to support graduates for the entirety of their career as they become leaders in their fields. We believe good developers become great through building with a tight-knit community. This is the essence of Codesmith. </p>
+        <!--notice images must use ejs and 'requre'-->
+        <a class="navbar-brand" href="/"><img src=<%=require( "./images/codesmith-logo-md.png") %> /></a>
       </div>
-      <div class="col-sm-5">
-        <div id="img-rotate" class="img-rotate">
-          <img class="img-responsive first active" src=<%=require( "./images/home-slideshow-assets/slide-01-488.jpg") %> />
-          <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-02-488.jpg") %> />
-          <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-03-488.jpg") %> />
-          <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-04-488.jpg") %> />
-          <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-05-488.jpg") %> />
-          <div>
-            <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-01-488.jpg") %> />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <h2 class="page-header red">Impact &amp; Outcomes</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="row">
-          <div class = "col-xs-3">
-            <p>
-              <img class="img-responsive" src=<%=require("./images/quote-jenna.jpg") %> />
-            </p>
-          </div>
-          <div class="col-xs-9">
-            <p style="margin-bottom: 5px"><small>“We work to make healthcare accessible and transparent through various tools, including our recommendation app/algorithm which suggests optimal health insurance plans for individuals based on several personal details. We’re also working to build out our concierge service through a centralized app where customers can get questions answered, upload prescriptions, contest medical bills, and schedule appointments. As we continue to build out these tools, we’re integrating machine learning to assist our customers more quickly, smartly, and efficiently.”</small></p>
-            <p class="text-right"><small><em>–Jenna Davis, Lead Software Engineer at Impact Health</em></small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <p>The residents go on to jobs from mid level developers to CTOs, earning on average $95k-$130k, but far more importantly they are transforming industries from healthcare to education. Graduates can be found at LinkedIn, Microsoft, Amazon, and more.</p>
-        <p>To further our impact, Codesmith offers a $100k scholarship fund, with at least 80% of recipients to be drawn from communities underrepresented in technology. Our partnership with <a href="http://codesmith.skills.fund/">Skills Fund</a> also makes access to a world class education possible. </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <h2 class="page-header green">Codesmith is a Community of Experimenters in Person and Online</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <h5 class="margin-top-none">Upcoming Open Workshops</h5>
-        <dl class="dl-horizontal event-list">
-          <dt><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240577656/">Wed Jun 21</a></dt>
-          <dd><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240577656/">Fundamentals of Programing – Intro to Web Development</a></dd>
-          <dt><a target="_blank" href="JS The Hard Parts LA (Onsite & Online): Callbacks & Higher Order Functions">Thu Jun 22</a></dt>
-          <dd><a target="_blank" href="JS The Hard Parts LA (Onsite & Online): Callbacks & Higher Order Functions">JS - The Hard Parts LA (Onsite &amp; Online): Callbacks &amp; Higher Order Functions</a></dd>
-          <dt><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240913801/">Sat Jun 24</a></dt>
-          <dd><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240913801/">freeCodeCamp Algorithm Challenges</a></dd>
-          <dt><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240578672/">Tue Jun 27</a></dt>
-          <dd><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240578672/">Framework Info Session: Part-Time JavaScript Program (Online)</a></dd>
-          <a href="https://www.codesmith.io/events"><small><strong>More Events</strong> <span class="caret right"></span></small></a>
-        </dl>
-      </div>
-      <div class="col-sm-6">
-        <h5 class="margin-top-none">Latest Research &amp; Teaching</h5>
-        <ul class="list-unstyled news-feed">
-          <li><a href="https://www.codesmith.io/blog/scholarship-board">Codesmith Announces $100k Scholarship Fund</a></li>
-          <li><a href="https://www.codesmith.io/blog/machine-learning-program">Codesmith Launches New Machine Learning Program</a></li>
-          <li><a href="https://www.codesmith.io/blog/virtual-reality-studio">Codesmith Offers New Opportunities with VR Studio</a></li>
-          <li><a href="https://www.codesmith.io/blog/2017-06-16-webDSP">Codesmith Project WebDSP on Google I/O Main Stage</a></li>
-          <a href="https://www.codesmith.io/blog"><small><strong>More News</strong> <span class="caret right"></span></small></a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/program.html">12 Week Academy</a></li>
+          <li><a href="https://www.codesmith.io/events">Events &amp; Workshops</a></li>
+          <li><a href="https://www.codesmith.io/faq">FAQ</a></li>
+          <li><a href="https://www.codesmith.io/recruitment">Recruitment</a></li>
+          <li><a href="https://www.codesmith.io/blog">Blog</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
+          <li><a href="https://www.codesmith.io/apply-login/apply">The July 2017 cohort is now open.</a></li>
+          <li><a class="btn btn-primary" href="https://www.codesmith.io/apply-login/apply">Apply</a></li>
         </ul>
       </div>
+      <!-- /.navbar-collapse -->
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <form action="//codesmith.us10.list-manage.com/subscribe/post?u=da60d9c5e75cbb19470ec4fa6&amp;id=ac051d2a78" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline text-center email-signup" target="_blank" novalidate="true">
-          <div class="form-group">
-            <label>Join Our Community: </label>
-            <label class="sr-only" for="mce-NAME">Name</label>
-            <input type="name" name="NAME" class="name form-control" id="mce-NAME"  placeholder="Name">
-            <label class="sr-only" for="mce-EMAIL">Email address</label>
-            <input type="email" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
+    <!-- /.container-fluid -->
+  </nav>
+  <announcement>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well text-center" style="margin-bottom: 60px">
+            Application deadline extended for this week's JSHP attendees. <a href="#">RSVP here</a>.
           </div>
-          <button type="submit" class="btn btn-default btn-sm btn-primary btn-signup"  name="subscribe">Sign Up</button>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</main>
+  </announcement>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <h1 class="margin-top-none page-header">We created Codesmith to be a hub of groundbreaking technology.</h1>
+          <p>The heart of Codesmith is the <a href="program.html">Software Engineering Immersive</a>, a program where engineers
+            build compelling open-source projects, develop as autonomous problem solvers and excellent communicators, and
+            build expertise in computer science, fullstack JavaScript and machine learning.</p>
+          <p><strong>Open source projects developed during the program have been featured at <a href="https://www.codesmith.io/blog/2017-06-16-webDSP">Google I/O</a>, and collected over 20,000 Github stars.</strong></p>
+          <p>The Codesmith alumni network continues to support graduates for the entirety of their career as they become leaders
+            in their fields. We believe good developers become great through building with a tight-knit community. This is
+            the essence of Codesmith. </p>
+        </div>
+        <div class="col-sm-5">
+          <div id="img-rotate" class="img-rotate">
+            <img class="img-responsive first active" src=<%=require( "./images/home-slideshow-assets/slide-01-488.jpg") %>            />
+            <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-02-488.jpg") %> />
+            <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-03-488.jpg") %> />
+            <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-04-488.jpg") %> />
+            <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-05-488.jpg") %> />
+            <div>
+              <img class="img-responsive" src=<%=require( "./images/home-slideshow-assets/slide-01-488.jpg") %> />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="page-header red">Impact &amp; Outcomes</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-3">
+              <p>
+                <img class="img-responsive" src=<%=require( "./images/quote-jenna.jpg") %> />
+              </p>
+            </div>
+            <div class="col-sm-9">
+              <p style="margin-bottom: 5px"><small>“We work to make healthcare accessible and transparent through various tools, including our recommendation app/algorithm which suggests optimal health insurance plans for individuals based on several personal details. We’re also working to build out our concierge service through a centralized app where customers can get questions answered, upload prescriptions, contest medical bills, and schedule appointments. As we continue to build out these tools, we’re integrating machine learning to assist our customers more quickly, smartly, and efficiently.”</small></p>
+              <p class="text-right"><small><em>–Jenna Davis, Lead Software Engineer at Impact Health</em></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p>The residents go on to jobs from mid level developers to CTOs, earning on average $95k-$130k, but far more importantly
+            they are transforming industries from healthcare to education. Graduates can be found at LinkedIn, Microsoft,
+            Amazon, and more.</p>
+          <p>To further our impact, Codesmith offers a $100k scholarship fund, with at least 80% of recipients to be drawn from
+            communities underrepresented in technology. Our partnership with <a href="http://codesmith.skills.fund/">Skills Fund</a>            also makes access to a world class education possible. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="page-header green">Codesmith is a Community of Experimenters in Person and Online</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h5 class="margin-top-none">Upcoming Open Workshops</h5>
+          <dl class="dl-horizontal event-list">
+            <dt><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240577656/">Wed Jun 21</a></dt>
+            <dd><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240577656/">Fundamentals of Programing – Intro to Web Development</a></dd>
+            <dt><a target="_blank" href="JS The Hard Parts LA (Onsite & Online): Callbacks & Higher Order Functions">Thu Jun 22</a></dt>
+            <dd><a target="_blank" href="JS The Hard Parts LA (Onsite & Online): Callbacks & Higher Order Functions">JS - The Hard Parts LA (Onsite &amp; Online): Callbacks &amp; Higher Order Functions</a></dd>
+            <dt><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240913801/">Sat Jun 24</a></dt>
+            <dd><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240913801/">freeCodeCamp Algorithm Challenges</a></dd>
+            <dt><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240578672/">Tue Jun 27</a></dt>
+            <dd><a target="_blank" href="https://www.meetup.com/build-with-code-los-angeles/events/240578672/">Framework Info Session: Part-Time JavaScript Program (Online)</a></dd>
+          </dl>
+          <a href="https://www.codesmith.io/events"><small><strong>More Events</strong> <span class="caret right"></span></small></a>
+        </div>
+        <div class="col-sm-6">
+          <h5 class="margin-top-none">Latest Research &amp; Teaching</h5>
+          <ul class="list-unstyled news-feed">
+            <li><a href="https://www.codesmith.io/blog/scholarship-board">Codesmith Announces $100k Scholarship Fund</a></li>
+            <li><a href="https://www.codesmith.io/blog/machine-learning-program">Codesmith Launches New Machine Learning Program</a></li>
+            <li><a href="https://www.codesmith.io/blog/virtual-reality-studio">Codesmith Offers New Opportunities with VR Studio</a></li>
+            <li><a href="https://www.codesmith.io/blog/2017-06-16-webDSP">Codesmith Project WebDSP on Google I/O Main Stage</a></li>
+          </ul>
+          <a href="https://www.codesmith.io/blog"><small><strong>More News</strong> <span class="caret right"></span></small></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <form action="//codesmith.us10.list-manage.com/subscribe/post?u=da60d9c5e75cbb19470ec4fa6&amp;id=ac051d2a78" method="post"
+            id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline text-center email-signup"
+            target="_blank" novalidate="true">
+            <div class="form-group">
+              <label>Join Our Community: </label>
+              <label class="sr-only" for="mce-NAME">Name</label>
+              <input type="name" name="NAME" class="name form-control" id="mce-NAME" placeholder="Name">
+              <label class="sr-only" for="mce-EMAIL">Email address</label>
+              <input type="email" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
+            </div>
+            <button type="submit" class="btn btn-default btn-sm btn-primary btn-signup" name="subscribe">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer>
     <div class="container">
       <div class="row">
@@ -185,16 +218,24 @@
     </div>
   </footer>
 
-<!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-ga('create', 'UA-56972504-1', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
+    ga('create', 'UA-56972504-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
 </body>
+
 </html>

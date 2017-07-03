@@ -1,5 +1,7 @@
 import css from './app.scss';
 
+// const bsn = require('bootstrap.native');
+
 if (process.env.NODE_ENV !== 'production') {
   require('file-loader!./index.html');
   require('file-loader!./program.html');
@@ -21,23 +23,27 @@ function rotateImages(containerElement) {
 function respondToScroll() {
   window.addEventListener('scroll', () => {
     const mainNav = document.getElementById('main-nav');
-    const sidebar = document.getElementById('sidebar');
-    const relHeight = document.documentElement.scrollHeight - sidebar.clientHeight - 675;
 
-    if (window.scrollY > 30 && window.scrollY <= relHeight) {
-      if (mainNav) mainNav.classList.add('on-scroll', 'navbar-fixed-top');
-      document.body.classList.add('nav-pad');
-      if (sidebar) {
-        sidebar.style.position = 'fixed';
-        sidebar.style.top = 'inherit';
+    // if (sidebar) {
+    //   const relHeight = document.documentElement.scrollHeight - sidebar.clientHeight - 600;
+      
+    //   if (window.scrollY > relHeight) {
+    //     sidebar.style.position = 'absolute';
+    //     sidebar.style.top = relHeight + 'px';
+    //   } else {
+    //     sidebar.style.position = 'fixed';
+    //     sidebar.style.top = 'inherit';
+    //   }
+    // }
+
+    if (mainNav) {
+      if (window.scrollY > 30) {
+        mainNav.classList.add('on-scroll', 'navbar-fixed-top');
+        document.body.classList.add('nav-pad');
+      } else {
+        mainNav.classList.remove('on-scroll', 'navbar-fixed-top');
+        document.body.classList.remove('nav-pad');
       }
-    } else if (window.scrollY > relHeight) {
-      sidebar.style.position = 'absolute';
-      sidebar.style.top = relHeight + 'px';
-    } else {
-      mainNav.classList.remove('on-scroll', 'navbar-fixed-top');
-      document.body.classList.remove('nav-pad');
-      if (sidebar) sidebar.classList.remove('on-scroll');
     }
   });
 }
@@ -59,9 +65,15 @@ function jumpToIdNav() {
 
 window.onload = () => {
   const imgRotateElement = document.getElementById('img-rotate');
+  // const programSideNav = document.getElementById('sidebar');
+
+  // const programSideNavInit = new bsn.Affix(programSideNav, {
+  //   offsetBottom: 550
+  // });
+  // programSideNavInit.update();
 
   respondToScroll();
   jumpToIdNav();
-
   if (imgRotateElement) rotateImages(imgRotateElement);
+  
 };
