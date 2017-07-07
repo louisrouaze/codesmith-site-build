@@ -1,10 +1,9 @@
 import css from './app.scss';
 
-// const bsn = require('bootstrap.native');
-
 if (process.env.NODE_ENV !== 'production') {
   require('file-loader!./index.html');
   require('file-loader!./program.html');
+  require('file-loader!./faq.html');
 }
 
 function rotateImages(containerElement) {
@@ -20,42 +19,23 @@ function rotateImages(containerElement) {
 }
 
 // when the window scrolls past 30pixels, the main nav becomes fixed
-function respondToScroll() {
-  window.addEventListener('scroll', () => {
-    const mainNav = document.getElementById('main-nav');
-
-    // if (sidebar) {
-    //   const relHeight = document.documentElement.scrollHeight - sidebar.clientHeight - 600;
-      
-    //   if (window.scrollY > relHeight) {
-    //     sidebar.style.position = 'absolute';
-    //     sidebar.style.top = relHeight + 'px';
-    //   } else {
-    //     sidebar.style.position = 'fixed';
-    //     sidebar.style.top = 'inherit';
-    //   }
-    // }
-
-    if (mainNav) {
-      if (window.scrollY > 30) {
-        mainNav.classList.add('on-scroll', 'navbar-fixed-top');
-        document.body.classList.add('nav-pad');
-      } else {
-        mainNav.classList.remove('on-scroll', 'navbar-fixed-top');
-        document.body.classList.remove('nav-pad');
-      }
+function respondToScroll(el) {
+  if (el) {
+    if (window.scrollY > 30) {
+      el.classList.add('on-scroll', 'navbar-fixed-top');
+      document.body.classList.add('nav-pad');
+    } else {
+      el.classList.remove('on-scroll', 'navbar-fixed-top');
+      document.body.classList.remove('nav-pad');
     }
-  });
+  }
 }
 
 // sidebar page-jump-to-id navigation
-function jumpToIdNav() {
-  // populate sidebar navigation links for FAQ page
-  const sidebarLinks = document.querySelectorAll('.sidebar a');
-
+function jumpToIdNav(el) {
   // add event functionality for sidebar navigation
-  for (let i = 0; i < sidebarLinks.length; i++) {
-    sidebarLinks[i].addEventListener('click', e => {
+  for (let i = 0; i < el.length; i++) {
+    el[i].addEventListener('click', e => {
       e.preventDefault();
       document.getElementById(e.target.hash.slice(1)).scrollIntoView({ behavior: 'smooth' });
       window.scrollBy(0, -140);
@@ -63,17 +43,31 @@ function jumpToIdNav() {
   }
 }
 
+function sideBarHeight(el) {
+  if (el.classList[2] === 'affix-top') {
+    el.style.maxHeight = window.innerHeight + window.scrollY - 360 + 'px';
+  }
+}
+
+const mainNav = document.getElementById('main-nav');
+const imgRotateElement = document.getElementById('img-rotate');
+const sidebar = document.getElementById('sidebar');
+const sidebarLinks = document.querySelectorAll('.sidebar a');
+
 window.onload = () => {
-  const imgRotateElement = document.getElementById('img-rotate');
-  // const programSideNav = document.getElementById('sidebar');
-
-  // const programSideNavInit = new bsn.Affix(programSideNav, {
-  //   offsetBottom: 550
-  // });
-  // programSideNavInit.update();
-
-  respondToScroll();
-  jumpToIdNav();
+  console.log('hello');
+  if (sidebar) {
+    sideBarHeight(sidebar);
+    jumpToIdNav(sidebarLinks);
+  }
   if (imgRotateElement) rotateImages(imgRotateElement);
-  
 };
+
+window.addEventListener('scroll', () => {
+  if (sidebar) sideBarHeight(sidebar);
+  respondToScroll(mainNav);
+});
+
+window.addEventListener('resize', () => {
+  if (sidebar) sideBarHeight(sidebar);
+});

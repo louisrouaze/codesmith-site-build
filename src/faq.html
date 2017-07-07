@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SASS-CSS Bootstrap Builder</title>
+</head>
+
+<body>
+  <nav id="main-nav" class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="/"><img src=<%=require( "./images/codesmith-logo-md.png") %> /></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/program.html">12 Week Academy</a></li>
+          <li><a href="https://www.codesmith.io/events">Events &amp; Workshops</a></li>
+          <li><a href="https://www.codesmith.io/faq.html">FAQ</a></li>
+          <li><a href="https://www.codesmith.io/recruitment">Recruitment</a></li>
+          <li><a href="https://www.codesmith.io/blog">Blog</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
+          <li><a href="https://www.codesmith.io/apply-login/apply">The July 2017 cohort is now open.</a></li>
+          <li><a class="btn btn-primary" href="https://www.codesmith.io/apply-login/apply">Apply</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 id="codesmith-program" class="margin-top-none page-header">FAQ</h1>
+          <p><img class="img-responsive" src=<%=require( "./images/banner-header-assets/banner-header-01.png") %> /></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          
+
+          <!--<p><img class="img-responsive" src=<%=require( "./images/photo-assets/photo-01.jpg") %> /></p>-->
+
+          <h2 name="General" id="general" class="page-header">General</h2>
+
+
+              <div role="tab" id="headingOne">
+                <h3>
+                  <a data-toggle="collapse" href="#collapseOne" aria-controls="collapseOne"><span class="caret right"></span>What is Codesmith?</a>
+                </h3>
+              </div>
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                  vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                  haven't heard of them accusamus labore sustainable VHS.
+              </div>
+              <div role="tab" id="headingTwo">
+                <h3>
+                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo"><span class="caret right"></span>Why do you teach JavaScript?</a>
+                </h3>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                  vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                  haven't heard of them accusamus labore sustainable VHS.
+              </div>
+
+              <div role="tab" id="headingThree">
+                <h3>
+                  <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree"><span class="caret right"></span>Is Codesmith a bootcamp?</a>
+                </h3>
+              </div>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">           
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                  vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                  haven't heard of them accusamus labore sustainable VHS.
+              </div>
+
+
+          <h2 name="General" id="general" class="page-header">Admissions</h2>
+
+          <h3 id="1">Am I ready?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="2">How can I prepare for the application and interview?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="2">Is U.S. citizenship required?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="2">I have a computer science degree. Is this program for me?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="2">What if I'm under 18?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="2">What if I'm over 40?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h2 id="preparing-for-codesmith" class="page-header">Preparing for Codesmith</h2>
+
+          <h3 id="1">How much time is needed for the pre-course material?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h2 id="program" class="page-header">The Program</h2>
+
+          <h3 id="1">How much can I learn in 12 weeks?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="1">What is the time commitment?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="1">What else is done outside of coding?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h2 id="program" class="page-header">After Codesmith</h2>
+
+          <h3 id="1">What happens after the program ends?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="1">What are the average outcomes of Codesmith?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="1">Is a job guaranteed?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h2 id="program" class="page-header">Logistics</h2>
+
+          <h3 id="1">What are the payment options?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="1">Are scholarships available?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+          <h3 id="1">Is living and housing included?</h3>
+          <p>Residents of Codesmith build projects that aim to push at the frontier of technology - open source tools and libraries
+            for developers or applications deployed at scale that make an impact in society.</p>
+          <p>Remember, open source software forms the <a href="https://fordfoundcontent.blob.core.windows.net/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">roads and bridges</a>,
+            the infrastructure, of the applications and experiences we love - we depend on it at Codesmith and we should
+            all be contributors. It’s hard to identify the ‘typical’ Codesmith project - as each person at Codesmith tackles
+            distinct new challenges, but recent projects have included:</p>
+
+
+
+
+
+
+        </div>
+        <div class="col-sm-4">
+          <div id="sidebar" class="well sidebar" data-spy="affix" data-offset-top="760" data-offset-bottom="550">
+          <!--<div id="sidebar" class="well sidebar">-->
+            <h3>FAQ</h3>
+            <ul class="list-unstyled">
+              <li><a href="#your-background">General</a></li>
+              <li><a href="#pedagogy">Admissions</a></li>
+              <li><a href="#career">Preparing for Codesmith</a></li>
+              <li><a href="#career">The Program</a></li>
+              <li><a href="#career">After Codesmith</a></li>
+              <li><a href="#career">Logistics</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-xs-4">
+              <ul class="list-unstyled">
+                <li><strong>Company</strong></li>
+                <li><a href="https://www.codesmith.io/about">About</a></li>
+                <li><a href="https://www.codesmith.io/blog">Blog</a></li>
+                <li><a href="mailto:hello@codesmith.io" title="Contact Codesmith Los Angeles">Contact Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="https://www.codesmith.io/jobs">Jobs</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-4">
+              <ul class="list-unstyled">
+                <li><strong>Program</strong></li>
+                <li><a href="https://www.codesmith.io/apply-login/apply">Apply</a></li>
+                <li><a href="https://www.codesmith.io/faq.html">FAQ</a></li>
+                <li><a href="/program.html">Programs</a></li>
+                <li><a href="https://www.codesmith.io/recruitment">Recruitment</a></li>
+                <li><a href="https://www.codesmith.io/student-projects">Student Projects</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-4">
+              <ul class="list-unstyled">
+                <li><strong>Social</strong></li>
+                <li><a href="https://www.facebook.com/codesmithhq">Facebook</a></li>
+                <li><a href="https://www.instagram.com/codesmithio/">Instragram</a></li>
+                <li><a href="https://twitter.com/codesmithio">Twitter</a></li>
+                <li><a href="https://www.youtube.com/c/codesmithschool">YouTube</a></li>
+                <li><a href="https://www.linkedin.com/company-beta/6414890/">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <address>
+            <strong>Codesmith</strong><br /> 5300 Beethoven Street, PH Floor (4th)<br /> Los Angeles, CA 90066<br />
+            <abbr title="Email">E:</abbr> hello@codesmith.io<br />
+            <abbr title="Phone">P:</abbr> (323) 736-0715
+          </address>
+        </div>
+      </div>
+      <p>
+        &copy; 2015 - 2017 Codesmith. All Rights Reserved. <a href="https://www.codesmith.io/terms">Terms and Conditions</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-56972504-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+</body>
+
+</html>
