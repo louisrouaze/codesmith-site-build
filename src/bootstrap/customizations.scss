@@ -20,6 +20,7 @@ $gray-darker: #34495e; // #252525;
 $gray-dark: #676e7b; // #444444;
 // $gray:                   lighten($gray-base, 33.5%) !default; // #555
 // $gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-light: #708396;
 // $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 $gray-lighter: #f7f7f7;
 
@@ -77,6 +78,7 @@ $font-size-h2: 1.5em; // ~36px
 // $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
 $font-size-h3: 1.25em; // ~30px
 // $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h4: 1.12em;
 // $font-size-h5:            $font-size-base !default;
 $font-size-h5: 1em;
 // $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
@@ -178,8 +180,11 @@ $border-radius-small: 0;
 // $btn-font-weight:                normal !default;
 
 // $btn-default-color:              #333 !default;
+$btn-default-color: inherit;
 // $btn-default-bg:                 #fff !default;
+$btn-default-bg: #f7f7f7;
 // $btn-default-border:             #ccc !default;
+$btn-default-border: transparent;
 
 // $btn-primary-color:              #fff !default;
 // $btn-primary-bg:                 $brand-primary !default;
@@ -209,6 +214,7 @@ $btn-primary-border: darken($btn-primary-bg, 5%);
 // $btn-border-radius-base:         $border-radius-base !default;
 $btn-border-radius-base: 0px;
 // $btn-border-radius-large:        $border-radius-large !default;
+$btn-border-radius-large: 0px;
 // $btn-border-radius-small:        $border-radius-small !default;
 $btn-border-radius-small: 0px;
 
@@ -477,6 +483,7 @@ $navbar-default-brand-color: $brand-primary;
 
 // //== Tabs
 // $nav-tabs-border-color:                     #ddd !default;
+$nav-tabs-border-color: #cfd3db;
 
 // $nav-tabs-link-hover-border-color:          $gray-lighter !default;
 
@@ -824,9 +831,11 @@ $well-border: transparent;
 // //##
 
 // $badge-color:                 #fff !default;
+$badge-color: #676e7b;
 // //** Linked badge text color on hover
 // $badge-link-hover-color:      #fff !default;
 // $badge-bg:                    $gray-light !default;
+$badge-bg: #cfd3db;
 
 // //** Badge text color in active nav link
 // $badge-active-color:          $link-color !default;
@@ -918,8 +927,9 @@ $well-border: transparent;
 // $page-header-border-color:    $gray-lighter !default;
 // //** Width of horizontal description list titles
 // $dl-horizontal-offset:        $component-offset-horizontal !default;
-$dl-horizontal-offset: 150px;
+$dl-horizontal-offset: 130px;
 // //** Point at which .dl-horizontal becomes horizontal
 // $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 // //** Horizontal line color.
 // $hr-border:                   $gray-lighter !default;
+$hr-border: lighten($gray-light, 33%);

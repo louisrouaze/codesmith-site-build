@@ -81,24 +81,40 @@ module.exports = {
       hash: true,
       template: './src/faq.html',
       filename: 'faq.html',
-      // minify: {
-      //   collapseWhitespace: true,
-      // },
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/events.html',
+      filename: 'events.html',
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/blog.html',
+      filename: 'blog.html',
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/cs-style-guide.html',
+      filename: 'cs-style-guide.html',
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/csx.html',
+      filename: 'csx.html',
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/learn.html',
+      filename: 'learn.html',
     }),
     new HtmlWebpackPlugin({
       hash: true,
       template: './src/program.html',
       filename: 'program.html',
-      // minify: {
-      //   collapseWhitespace: true,
-      // },
     }),
     new HtmlWebpackPlugin({
       hash: true,
       template: './src/index.html',
-      // minify: {
-      //   collapseWhitespace: true,
-      // },
     }),
     new ExtractTextPlugin({
       filename: './css/[name].css',
@@ -110,11 +126,9 @@ module.exports = {
     // Make sure this is after ExtractTextPlugin!
     new PurifyCSSPlugin({
       // Give paths to parse for rules. These should be absolute!
-      paths: glob.sync(
-        path.join(__dirname, 'src/*.html')
-      ),
+      paths: glob.sync(path.join(__dirname, 'src/*.html')),
       purifyOptions: {
-        whitelist: ['on-scroll', 'nav-pad'],
+        whitelist: ['on-scroll', 'nav-pad', 'collapsing'],
       },
     }),
   ],

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Codesmith teaches software engineering through an immersive, career accelerating program taught by leading industry experts."
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="metadata.name" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.codesmith.io" />
+  <meta property="og:description" content="Codesmith teaches software engineering through an immersive, career accelerating program taught by leading industry experts."
+  />
+  <meta property="og:site_name" content="Codesmith" />
+  <meta property="og:image" content="metadata.image" />
+  <title>Codesmith - Software Engineering Immersive</title>
+</head>
+
+<body>
+  <nav id="main-nav" class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <!--notice images must use ejs and 'requre'-->
+        <a class="navbar-brand" href="/"><img src=<%=require( "./images/codesmith-logo-md.png") %> /></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/program.html">12 Week Academy</a></li>
+          <li><a href="#">Events &amp; Workshops</a></li>
+          <li><a href="https://www.codesmith.io/faq.html">FAQ</a></li>
+          <li><a href="https://www.codesmith.io/recruitment">Recruitment</a></li>
+          <li><a href="https://www.codesmith.io/blog">Blog</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
+          <li><a href="https://www.codesmith.io/apply-login/apply">The July 2017 cohort is now open.</a></li>
+          <li><a class="btn btn-primary" href="https://www.codesmith.io/apply-login/apply">Apply</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="margin-top-none page-header">Featured Articles</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <!-- <div class="row">
+            <div class="col-sm-4">
+              <div class="well feature">
+                <img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive">
+                <h3>Featured Article Title Goes Here</h3>
+                <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling
+                  open-source projects, develop as autonomous problem solvers.</p>
+                  <p>Bet.</p>
+              </div>
+            </div>
+
+
+            <div class="col-sm-8">
+              <div class="well feature">
+                <div class="row">
+                  <div class="col-sm-6"><img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive"></div>
+                  <div class="col-sm-6">
+                    <h3>Featured Article Title Goes Here</h3>
+                    <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling
+                      open-source projects.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="well feature">
+                <div class="row">
+                  <div class="col-sm-6"><img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive"></div>
+                  <div class="col-sm-6">
+                    <h3>Featured Article Title Goes Here</h3>
+                    <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling
+                      open-source projects.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="well feature">
+                <img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive">
+                <h3 class="page-header">Featured Article Title Goes Here</h3>
+                <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling
+                  open-source projects, develop as autonomous problem solvers.</p>
+                <p>Bet.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="well feature">
+                <img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive">
+                <h3 class="page-header">Featured Article Title Goes Here</h3>
+                <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling
+                  open-source projects, develop as autonomous problem solvers.</p>
+                <p>Bet.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="well feature">
+                <img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive">
+                <h3 class="page-header">Featured Article Title Goes Here</h3>
+                <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling
+                  open-source projects, develop as autonomous problem solvers.</p>
+                <p>Bet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+          <h1 class="page-header">Recent Articles</h1>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="page-header">Blog Feed</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 categories-nav">
+          <h6>Categories</h6>
+          <ul>
+            <li class="active"><a href="#">Show All</a></li>
+            <li><a href="#">Front-End Development</a></li>
+            <li><a href="#">Back-End Development</a></li>
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#">Virtual &amp; Augmented Reality</a></li>
+            <li><a href="#">Computer Science</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Software Engineering Career</a></li>
+            <li><a href="#">Codesmith Log</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-7">
+
+
+          <div class="blog-article-thumb">
+            <h2><a href="#">Sample Blog Title Here</a></h2>
+            <div class="meta-date"><a href="#">Januaray 1, 2017</a></div>
+            <div class="meta-cat">Categories: <a href="#">Front-End</a>, <a href="#">React</a>, <a href="#">Prep</a></div>
+            <img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive meta-img">
+            <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+              projects, develop as autonomous problem solvers.</p>
+            <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+              projects, develop as autonomous problem solvers.</p>
+            <button class="btn btn-primary" href="#">Read More&hellip;</button>
+            <hr />
+          </div>
+
+          <div class="blog-article-thumb">
+            <h2><a href="#">Sample Blog Title Here</a></h2>
+            <div class="meta-date"><a href="#">Januaray 1, 2017</a></div>
+            <div class="meta-cat">Categories: <a href="#">Front-End</a>, <a href="#">React</a>, <a href="#">Prep</a></div>
+            <img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive meta-img">
+            <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+              projects, develop as autonomous problem solvers.</p>
+            <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+              projects, develop as autonomous problem solvers.</p>
+            <button class="btn btn-primary" href="#">Read More&hellip;</button>
+            <hr />
+          </div>
+
+          <div class="blog-article-thumb">
+            <h2><a href="#">Sample Blog Title Here</a></h2>
+            <div class="meta-date"><a href="#">Januaray 1, 2017</a></div>
+            <div class="meta-cat">Categories: <a href="#">Front-End</a>, <a href="#">React</a>, <a href="#">Prep</a></div>
+            <img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive meta-img">
+            <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+              projects, develop as autonomous problem solvers.</p>
+            <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+              projects, develop as autonomous problem solvers.</p>
+            <button class="btn btn-primary" href="#">Read More&hellip;</button>
+            <hr />
+          </div>
+
+
+
+        </div>
+        <aside class="col-sm-3">
+          <h4 class="page-header">Sample Aside</h4>
+          <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+            projects, develop as autonomous problem solvers.</p>
+          <div class="well">
+            <h4>Well Title</h4>
+            <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+              projects, develop as autonomous problem solvers.</p>
+          </div>
+          <div class="well">
+            <h4 class="page-header">Well Title</h4>
+            <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+              projects, develop as autonomous problem solvers.</p>
+          </div>
+          <h4 class="page-header">Sample Aside</h4>
+          <p>The heart of Codesmith is the Software Engineering Immersive, a program where engineers build compelling open-source
+            projects, develop as autonomous problem solvers.</p>
+          <h4 class="page-header">Sample Aside</h4>
+          <p><img src=<%=require( "./images/photo-assets/photo-01.jpg") %> alt="" class="img-responsive"></p>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-xs-4">
+              <ul class="list-unstyled">
+                <li><strong>Company</strong></li>
+                <li><a href="https://www.codesmith.io/about">About</a></li>
+                <li><a href="https://www.codesmith.io/blog">Blog</a></li>
+                <li><a href="mailto:hello@codesmith.io" title="Contact Codesmith Los Angeles">Contact Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="https://www.codesmith.io/jobs">Jobs</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-4">
+              <ul class="list-unstyled">
+                <li><strong>Program</strong></li>
+                <li><a href="https://www.codesmith.io/apply-login/apply">Apply</a></li>
+                <li><a href="https://www.codesmith.io/faq.html">FAQ</a></li>
+                <li><a href="/program.html">Programs</a></li>
+                <li><a href="https://www.codesmith.io/recruitment">Recruitment</a></li>
+                <li><a href="https://www.codesmith.io/student-projects">Student Projects</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-4">
+              <ul class="list-unstyled">
+                <li><strong>Social</strong></li>
+                <li><a href="https://www.facebook.com/codesmithhq">Facebook</a></li>
+                <li><a href="https://www.instagram.com/codesmithio/">Instragram</a></li>
+                <li><a href="https://twitter.com/codesmithio">Twitter</a></li>
+                <li><a href="https://www.youtube.com/c/codesmithschool">YouTube</a></li>
+                <li><a href="https://www.linkedin.com/company-beta/6414890/">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <strong>Codesmith</strong>
+          <address>
+            <a href="https://goo.gl/maps/zXPRY9HpnAw" target="_blank">
+              5300 Beethoven Street, PH Floor (4th)<br />Los Angeles, CA 90066
+            </a>
+          </address>
+          <address>
+            <a href="https://goo.gl/maps/mCb21wkpHhA2" target="_blank">
+              250 Lafayette Street, 2nd Floor<br />New York, NY 10012
+            </a>
+          </address>
+          <abbr title="Email">E:</abbr><a href="mailto:hello@codesmith.io" title="Contact Codesmith Los Angeles">hello@codesmith.io</a><br
+          />
+          <abbr title="Phone">P:</abbr> (323) 736-0715
+
+        </div>
+      </div>
+      <p>
+        &copy; 2015 - 2017 Codesmith. All Rights Reserved. <a href="https://www.codesmith.io/terms">Terms and Conditions</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-56972504-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+</body>
+
+</html>
